@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="glm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\vendor\;CMake Files\vendor\FastNoise\;CMake Files\vendor\FastNoise\src\;CMake Files\vendor\GLFW\;CMake Files\vendor\GLFW\CMake\;CMake Files\vendor\GLFW\src\;CMake Files\vendor\glm\;CMake Files\vendor\glm\glm\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/vendor/glm"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/vendor/glm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/vendor/glm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/vendor/glm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/vendor/glm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/FastNoise/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\vendor\FastNoise\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/FastNoise/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\vendor\FastNoise\src\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/GLFW/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\vendor\GLFW\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/GLFW/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\vendor\GLFW\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/GLFW/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\vendor\GLFW\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/GLFW/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\vendor\GLFW\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/GLFW/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\vendor\GLFW\src\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/GLFW/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\vendor\GLFW\src\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\vendor\glm\"/>
+		</Unit>
+		<Unit filename="/Users/dallinhagman/CLionProjects/PlanetRenderer/vendor/glm/glm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\vendor\glm\glm\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
