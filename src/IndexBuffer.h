@@ -9,7 +9,7 @@
 class IndexBuffer {
 public:
     IndexBuffer();
-    IndexBuffer(const std::vector<int>& indices);
+    IndexBuffer(const std::vector<unsigned int>& indices);
     IndexBuffer(unsigned int *indices, unsigned int count);
 
     void Bind();

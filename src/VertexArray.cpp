@@ -8,11 +8,15 @@ VertexArray::VertexArray() {
     glGenVertexArrays(1, &m_Handle);
 }
 
+//Hardcoded for simplicity, switch to intialization lists and actual layout formatting.
 void VertexArray::SetLayout() {
     glBindVertexArray(m_Handle);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, nullptr);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, nullptr);
     glEnableVertexAttribArray(0);
+
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
 }
 
 void VertexArray::Bind() {

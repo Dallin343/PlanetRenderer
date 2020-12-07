@@ -9,10 +9,10 @@ VertexBuffer::VertexBuffer() {
     glGenBuffers(1, &m_Handle);
 }
 
-VertexBuffer::VertexBuffer(const std::vector<glm::vec3>& data) {
+VertexBuffer::VertexBuffer(const std::vector<float>& data) {
     glGenBuffers(1, &m_Handle);
     glBindBuffer(GL_ARRAY_BUFFER, m_Handle);
-    glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(glm::vec3), data.data(), GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(float), data.data(), GL_STATIC_DRAW);
 }
 
 VertexBuffer::VertexBuffer(const float* data, unsigned int count) {

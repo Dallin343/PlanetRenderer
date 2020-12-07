@@ -6,64 +6,21 @@
 #include <vector>
 #include <glm/glm.hpp>
 
-struct Edge {
-    std::vector<int> VertexIndices;
-
-    Edge() = default;
-    Edge(std::vector<int> vertexIndices) {
-        VertexIndices = vertexIndices;
-    }
-};
-
-template <typename T>
-class FixedSizeList {
-public:
-
-    FixedSizeList() = default;
-
-    FixedSizeList (int size) {
-        m_Items = std::vector<T>();
-        m_Items.reserve(size);
-        iter = m_Items.begin();
-    }
-
-    void Add (T item) {
-        m_Items.insert(iter, item);
-        iter++;
-        nextIndex++;
-    }
-
-    void AddRange (const T* items, int count) {
-        for (int i = 0; i < count; i++) {
-            Add(items[i]);
-        }
-    }
-
-public:
-    int nextIndex = 0;
-    typename std::vector<T>::iterator iter;
-    std::vector<T> m_Items;
+struct Face {
+    int i0, i1, i2;
 };
 
 class Mesh {
 public:
     Mesh() = default;
 
-    void GenerateUVSphere(uint32_t radius, uint32_t segments, uint32_t stacks);
-
-    void GenOctoSphere(int resolution);
-    void CreateFace (Edge sideA, Edge sideB, Edge bottom, bool reverse);
+    void GenOctoSphere(int subdivisions);
 
     const std::vector<glm::vec3>& GetVertices() { return m_Vertices; }
-    const std::vector<int>& GetTriangles() { return m_Triangles; }
+    const std::vector<Face>& GetFaces() { return m_Faces; }
 
 private:
     std::vector<glm::vec3> m_Vertices;
-    std::vector<int> m_Triangles;
+    std::vector<Face> m_Faces;
 
-    FixedSizeList<glm::vec3> vertices;
-    FixedSizeList<int> triangles;
-
-    int m_NumDivisions;
-    int m_NumVertsPerFace;
 };

@@ -5,8 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/dallinhagman/CLionProjects/PlanetRenderer/main.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/main.cpp.o"
+  "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/CubeMesh.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/CubeMesh.cpp.o"
+  "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/CubeSphereMesh.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/CubeSphereMesh.cpp.o"
   "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/IndexBuffer.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/IndexBuffer.cpp.o"
   "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/Mesh.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/Mesh.cpp.o"
+  "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/OctoSphereMesh.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/OctoSphereMesh.cpp.o"
   "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/Shader.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/Shader.cpp.o"
   "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/VertexArray.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/VertexArray.cpp.o"
   "/Users/dallinhagman/CLionProjects/PlanetRenderer/src/VertexBuffer.cpp" "/Users/dallinhagman/CLionProjects/PlanetRenderer/cmake-build-debug/CMakeFiles/PlanetRenderer.dir/src/VertexBuffer.cpp.o"
@@ -20,7 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../vendor/GLFW/include"
   "../vendor/glm"
   "../vendor/glm/glm/.."
-  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework"
+  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/OpenGL.framework"
   )
 
 # Targets to which this target links.

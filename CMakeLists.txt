@@ -20,7 +20,7 @@ add_subdirectory(vendor/glm)
 
 add_library(Glad STATIC vendor/glad/include/glad/glad.h vendor/glad/src/glad.c)
 
-add_executable(PlanetRenderer main.cpp src/VertexBuffer.cpp src/VertexBuffer.h src/VertexArray.cpp src/VertexArray.h src/Shader.cpp src/Shader.h ShaderSource.h src/IndexBuffer.cpp src/IndexBuffer.h src/Mesh.cpp src/Mesh.h)
+add_executable(PlanetRenderer main.cpp src/VertexBuffer.cpp src/VertexBuffer.h src/VertexArray.cpp src/VertexArray.h src/Shader.cpp src/Shader.h ShaderSource.h src/IndexBuffer.cpp src/IndexBuffer.h src/Mesh.cpp src/Mesh.h src/OctoSphereMesh.cpp src/OctoSphereMesh.h src/CubeSphereMesh.cpp src/CubeSphereMesh.h src/CubeMesh.cpp src/CubeMesh.h src/Camera.h)
 
 find_package(OpenGL REQUIRED)
 

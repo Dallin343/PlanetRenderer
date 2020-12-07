@@ -7,10 +7,12 @@
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 
+class SphereVertex;
+
 class VertexBuffer {
 public:
     VertexBuffer();
-    VertexBuffer(const std::vector<glm::vec3>& data);
+    VertexBuffer(const std::vector<float>& data);
     VertexBuffer(const float* data, unsigned int count);
 
     void SetData(const std::vector<float>& data);
